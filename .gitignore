@@ -1,0 +1,29 @@
+# Python
+backend/.venv/
+backend/__pycache__/
+backend/*.pyc
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/*.tsbuildinfo
+frontend/node_modules/.tmp/
+
+# Database / generated data
+backend/*.db
+backend/*.sqlite3
+*.db
+*.sqlite3
+*.csv
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs / env
+*.log
+.env
+.env.*
