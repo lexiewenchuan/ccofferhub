@@ -58,7 +58,36 @@ ccofferhub/
 └── README.md
 ```
 
-## 本地运行
+## 部署
+
+### Render
+
+这个项目可以直接部署到 Render。
+
+1. 登录 Render
+2. 选择 **New +** → **Blueprint** 或 **Web Service**
+3. 连接 GitHub 仓库：`lexiewenchuan/ccofferhub`
+4. 如果使用 Blueprint，Render 会自动读取根目录的 `render.yaml`
+5. 等待构建完成
+
+部署后，Render 会分配一个固定地址，例如：
+
+- `https://ccofferhub.onrender.com`
+- 或者 `https://你的服务名.onrender.com`
+
+当前部署使用：
+
+- Build Command
+  ```bash
+  cd frontend && npm ci && npm run build && cd ../backend && pip install -r requirements.txt
+  ```
+
+- Start Command
+  ```bash
+  cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+  ```
+
+### 本地运行
 
 ### 1. 启动后端
 
