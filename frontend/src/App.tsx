@@ -67,7 +67,7 @@ type JobForm = {
   source_url: string
 }
 
-const API = `${window.location.origin.replace(':4173', ':8000').replace(':8787', ':8000')}`
+const API = window.location.origin
 const PAGE_SIZE = 12
 
 const statusOptions = [

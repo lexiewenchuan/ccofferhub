@@ -60,9 +60,37 @@ ccofferhub/
 
 ## 部署
 
+### Vercel
+
+这个项目可以免费部署到 Vercel，并获得一个固定链接，例如：
+
+- `https://ccofferhub.vercel.app`
+- 或者 `https://你的项目名.vercel.app`
+
+部署步骤：
+
+1. 登录 Vercel
+2. 点击 **Add New** → **Project**
+3. 导入 GitHub 仓库：`lexiewenchuan/ccofferhub`
+4. 保持根目录为仓库根目录
+5. Vercel 会读取根目录 `vercel.json`
+6. 点击 Deploy
+
+当前仓库已经包含：
+
+- `vercel.json`
+- 前端构建配置
+- 后端 Python API 路由配置
+
+部署完成后：
+
+- 前端页面走 Vercel 静态资源
+- `/api/*` 走 Vercel Python Serverless Function
+- 页面和 API 同域名访问，不需要手动改接口地址
+
 ### Render
 
-这个项目可以直接部署到 Render。
+这个项目也可以部署到 Render。
 
 1. 登录 Render
 2. 选择 **New +** → **Blueprint** 或 **Web Service**
