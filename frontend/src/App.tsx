@@ -16,7 +16,6 @@ import {
   login,
   logout,
   register,
-  resetDemoState,
   saveAdminJob as saveAdminJobLocal,
   saveResume as saveResumeLocal,
   toggleFavorite as toggleFavoriteLocal,
@@ -153,7 +152,6 @@ function App() {
   }
 
   useEffect(() => {
-    resetDemoState()
     setUser(getStoredUser())
     fetchJobs()
     fetchStats()
